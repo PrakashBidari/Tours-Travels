@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /dashboard
+Disallow: /account
+Disallow: /vendor
+Disallow: /rental-partner
+Disallow: /booking/
+Disallow: /payment/
+Disallow: /user/
+
+Sitemap: https://ramtours.com.np/sitemap.xml
