@@ -31,6 +31,12 @@ class AppServiceProvider extends ServiceProvider
     {
         Event::listen(Verified::class, NotifySuperAdminOfNewVendor::class);
 
+        // Uploaded images are served from whatever host/port the visitor is on, not APP_URL —
+        // otherwise they 404 whenever the two differ (e.g. `artisan serve` on :8000, LAN IP).
+        if (! $this->app->runningInConsole()) {
+            config(['filesystems.disks.public.url' => $this->app['request']->root().'/storage']);
+        }
+
         // Page views (e.g. the home hero) read the same settings row as the layout.
         View::composer('frontend.*', function ($view): void {
             $view->with('pageSettings', once(fn () => PageSetting::current()));

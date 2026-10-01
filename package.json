@@ -19,7 +19,7 @@
         "vite": "^7.0.7"
     },
     "dependencies": {
-        "@ckeditor/ckeditor5-build-classic": "^44.3.0",
+        "@ckeditor/ckeditor5-build-classic": "^41.4.2",
         "datatables.net-dt": "^3.0.1",
         "glightbox": "^3.3.1",
         "jquery": "^4.0.0",

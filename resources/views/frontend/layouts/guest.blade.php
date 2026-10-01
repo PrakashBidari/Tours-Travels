@@ -28,19 +28,19 @@
 
                 <div class="relative z-10 flex flex-col justify-between p-12 text-white w-full">
                     <a href="/" class="flex items-center gap-2.5">
-                        <x-application-mark class="h-9 w-auto" />
+                        <x-application-mark :light="true" class="h-9 w-auto" />
                         <span class="text-xl font-semibold">{{ config('app.name', 'Booking') }}</span>
                     </a>
 
                     <div class="max-w-md">
-                        <h1 class="text-4xl font-bold leading-tight">Find your perfect stay, effortlessly.</h1>
-                        <p class="mt-4 text-indigo-100 text-lg">Search, compare, and book rooms across thousands of properties &mdash; all in one place.</p>
+                        <h1 class="text-4xl font-bold leading-tight">Your journey, our commitment.</h1>
+                        <p class="mt-4 text-indigo-100 text-lg">Tour packages, flights, bus tickets, car rental, hotels and visa services &mdash; all in one place.</p>
 
                         <ul class="mt-8 space-y-3">
                             @foreach ([
-                                'Instant confirmation on every booking',
-                                'Best price guarantee, always',
-                                'Free cancellation on most rooms',
+                                'Nepal & international tour packages',
+                                'Track and manage your bookings online',
+                                'Personal support at every step',
                             ] as $feature)
                                 <li class="flex items-center gap-3 text-indigo-50">
                                     <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white/15">

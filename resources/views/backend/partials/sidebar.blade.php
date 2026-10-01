@@ -100,7 +100,7 @@
         <a href="{{ route('dashboard') }}" class="flex items-center gap-2 overflow-hidden">
             <x-application-mark class="block h-8 w-auto shrink-0" />
             <span :class="sidebarCollapsed ? 'lg:hidden' : ''"
-                class="whitespace-nowrap text-lg font-semibold text-gray-800 dark:text-gray-100">{{ config('app.name', 'Booking') }}</span>
+                class="whitespace-nowrap text-[15px] font-semibold text-gray-800 dark:text-gray-100">{{ config('app.name', 'Booking') }}</span>
         </a>
 
         <!-- Mobile close button -->
